@@ -4,11 +4,13 @@ body {
     align-content: center;
     justify-content: center;
     color: darkcyan;
-
+    font-family: "Comic Sans MS";
+    font-weight: bolder;
 }
 
 .calculator {
-    border: 1px solid red;
+    border: 0px solid darkcyan;
+    border-radius: 30px;
     display: flex;
     flex-direction: column;
     height: 95vh;
@@ -17,25 +19,29 @@ body {
 }
 
 .display {
-    border: 1px solid red;
+    border: 0px solid darkcyan;
     display: flex;
     flex-direction: column;
     height: 50%;
 }
 
 .currentCalculation {
-    border: 1px solid red;
+    border: 0px solid darkcyan;
+    border-radius: 30px;
+    padding: 5px;
     display: flex;
     flex-direction: column;
     height: 80%;
     font-size: 200%;
     justify-content: flex-end;
     text-align: end;
+    line-break: anywhere;
     word-break: keep-all;
 }
 
 .result {
-    border: 1px solid red;
+    border: 2px solid darkcyan;
+    border-radius: 30px;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -47,18 +53,18 @@ body {
 }
 
 .keypad {
-    border: 1px solid red;
+    border: 0px solid red;
     display: flex;
     flex-direction: row;
     height: 50%;
     font-size: 200%;
-    font-family: "Comic Sans MS";
-    font-weight: bolder;
+
 }
 
 .button {
     border-radius: 30px;
     box-shadow: 0 5px #004040;
+    user-select: none;
 }
 
 .button:active {
@@ -109,6 +115,7 @@ body {
 .equalButton {
     background: lightcyan;
     color: black;
+    z-index: 2;
 }
 
 .equalButton:hover {
